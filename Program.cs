@@ -4,6 +4,8 @@ List<TeamMember> DreamTeam = new List<TeamMember>();
 
 Console.WriteLine("Plan Your Heist!");
 
+int BankDifficulty = 100;
+
 string name = null;
 
 while (true)
@@ -38,4 +40,13 @@ while (true)
 }
 
 Console.WriteLine($"Your team is {DreamTeam.Count()} members strong");
-DreamTeam.ForEach(member => Console.WriteLine($"{member.Name}, skill level: {member.SkillLevel}, courage factor: {member.CourageFactor}"));
+
+int power = DreamTeam.Sum(member => member.SkillLevel);
+if (power >= BankDifficulty)
+{
+    Console.WriteLine("Heist Success!");
+}
+else
+{
+    Console.WriteLine("Believe it or not, straight to jail!");
+}
