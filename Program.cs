@@ -4,6 +4,9 @@ List<TeamMember> DreamTeam = new List<TeamMember>();
 
 Console.WriteLine("Plan Your Heist!");
 
+Console.WriteLine("Enter bank difficulty: ");
+int InitialBankDifficulty = int.Parse(Console.ReadLine());
+
 string name = null;
 
 while (true)
@@ -38,8 +41,9 @@ while (true)
 }
 
 Console.WriteLine("Enter number of trials you'd like to run: ");
-string response = Console.ReadLine();
-int trials = int.Parse(response);
+int trials = int.Parse(Console.ReadLine());
+
+Dictionary<string, int> ScoreCard = new Dictionary<string, int>();
 
 for (int i = 0; i < trials; i++)
 {
@@ -47,9 +51,7 @@ for (int i = 0; i < trials; i++)
     Random random = new Random();
     int LuckValue = random.Next(-10, 11);
 
-    int BankDifficulty = 100;
-
-    BankDifficulty += LuckValue;
+    int BankDifficulty = InitialBankDifficulty + LuckValue;
 
     Console.WriteLine($"Your team is {DreamTeam.Count()} members strong");
 
@@ -62,10 +64,30 @@ for (int i = 0; i < trials; i++)
     if (power >= BankDifficulty)
     {
         Console.WriteLine("Heist Success!");
+        if (ScoreCard.ContainsKey("Success"))
+        {
+            ScoreCard["Success"] += 1;
+        }
+        else
+        {
+            ScoreCard.Add("Success", 1);
+        }
+        
     }
     else
     {
         Console.WriteLine("Believe it or not, straight to jail!");
+        if (ScoreCard.ContainsKey("Failure"))
+        {
+            ScoreCard["Failure"] += 1;
+        }
+        else
+        {
+            ScoreCard.Add("Failure", 1);
+        }
     }
     Console.WriteLine("-----------------------------------------------");
 }
+
+Console.WriteLine($"Successes: {ScoreCard["Success"]}");
+Console.WriteLine($"Failures: {ScoreCard["Failure"]}");
