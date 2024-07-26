@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PlanYourHeist")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+432f185efbc619d0ad7073c62420d916c3804e67")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8de70a12609282cae45efa7af4e4e2f301e42b0e")]
 [assembly: System.Reflection.AssemblyProductAttribute("PlanYourHeist")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PlanYourHeist")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
