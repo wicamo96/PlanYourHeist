@@ -1,0 +1,15 @@
+C:\Users\willc\workspace\csharp\exercises\PlanYourHeist\bin\Debug\net8.0\PlanYourHeist.exe
+C:\Users\willc\workspace\csharp\exercises\PlanYourHeist\bin\Debug\net8.0\PlanYourHeist.deps.json
+C:\Users\willc\workspace\csharp\exercises\PlanYourHeist\bin\Debug\net8.0\PlanYourHeist.runtimeconfig.json
+C:\Users\willc\workspace\csharp\exercises\PlanYourHeist\bin\Debug\net8.0\PlanYourHeist.dll
+C:\Users\willc\workspace\csharp\exercises\PlanYourHeist\bin\Debug\net8.0\PlanYourHeist.pdb
+C:\Users\willc\workspace\csharp\exercises\PlanYourHeist\obj\Debug\net8.0\PlanYourHeist.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\willc\workspace\csharp\exercises\PlanYourHeist\obj\Debug\net8.0\PlanYourHeist.AssemblyInfoInputs.cache
+C:\Users\willc\workspace\csharp\exercises\PlanYourHeist\obj\Debug\net8.0\PlanYourHeist.AssemblyInfo.cs
+C:\Users\willc\workspace\csharp\exercises\PlanYourHeist\obj\Debug\net8.0\PlanYourHeist.csproj.CoreCompileInputs.cache
+C:\Users\willc\workspace\csharp\exercises\PlanYourHeist\obj\Debug\net8.0\PlanYourHeist.sourcelink.json
+C:\Users\willc\workspace\csharp\exercises\PlanYourHeist\obj\Debug\net8.0\PlanYourHeist.dll
+C:\Users\willc\workspace\csharp\exercises\PlanYourHeist\obj\Debug\net8.0\refint\PlanYourHeist.dll
+C:\Users\willc\workspace\csharp\exercises\PlanYourHeist\obj\Debug\net8.0\PlanYourHeist.pdb
+C:\Users\willc\workspace\csharp\exercises\PlanYourHeist\obj\Debug\net8.0\PlanYourHeist.genruntimeconfig.cache
+C:\Users\willc\workspace\csharp\exercises\PlanYourHeist\obj\Debug\net8.0\ref\PlanYourHeist.dll
