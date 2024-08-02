@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-List<IRobber> Roladex = new List<IRobber>(){
+List<IRobber> Rolodex = new List<IRobber>(){
     new Hacker {
         Name = "Bippity Boppity",
         SkillLevel = 50,
@@ -37,7 +37,7 @@ List<IRobber> Roladex = new List<IRobber>(){
 Console.WriteLine("Plan Your Heist!");
 while (true)
 {
-    Console.WriteLine($"You have {Roladex.Count} operatives in your roladex.");
+    Console.WriteLine($"You have {Rolodex.Count} operatives in your rolodex.");
 
     Console.WriteLine("Enter the name of a new operative: ");
     string name = Console.ReadLine();
@@ -62,7 +62,7 @@ while (true)
     switch (specialty)
     {
         case "hacker":
-            Roladex.Add(new Hacker
+            Rolodex.Add(new Hacker
             {
                 Name = name,
                 SkillLevel = skilllevel,
@@ -70,7 +70,7 @@ while (true)
             });
             break;
         case "muscle":
-            Roladex.Add(new Muscle
+            Rolodex.Add(new Muscle
             {
                 Name = name,
                 SkillLevel = skilllevel,
@@ -78,7 +78,7 @@ while (true)
             });
             break;
         case "lock specialist":
-            Roladex.Add(new LockSpecialist
+            Rolodex.Add(new LockSpecialist
             {
                 Name = name,
                 SkillLevel = skilllevel,
@@ -104,9 +104,9 @@ var SortedReconReport = from entry in ReconReport orderby entry.Value ascending 
 Console.WriteLine($"Most secure: {SortedReconReport.First().Key}");
 Console.WriteLine($"Least secure: {SortedReconReport.Last().Key}");
 
-Roladex.ForEach(member =>
+Rolodex.ForEach(member =>
 {
-    int index = Roladex.IndexOf(member);
+    int index = Rolodex.IndexOf(member);
     Console.WriteLine($"Operative {index}: {member.Name}, Specialty: {member.GetType().ToString()}, Skill Level: {member.SkillLevel}, Cut: {member.PercentageCut}");
 });
 
@@ -121,14 +121,14 @@ while (true)
         break;
     }
     int IntSelection = int.Parse(selection);
-    IRobber CrewMember = Roladex[IntSelection];
+    IRobber CrewMember = Rolodex[IntSelection];
     Crew.Add(CrewMember);
 
-    Roladex.ForEach(member =>
+    Rolodex.ForEach(member =>
     {
         if (!Crew.Contains(member) || Crew.Sum(member => member.PercentageCut) + member.PercentageCut !> 100)
         {
-        int index = Roladex.IndexOf(member);
+        int index = Rolodex.IndexOf(member);
         Console.WriteLine($"Operative {index}: {member.Name}, Specialty: {member.GetType().ToString()}, Skill Level: {member.SkillLevel}, Cut: {member.PercentageCut}");
         }
     });
